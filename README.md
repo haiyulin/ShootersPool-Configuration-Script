@@ -31,6 +31,10 @@
 
 请评估并承担与运行此脚本相关的风险。 假设使用此脚本的玩家熟悉并理解 PowerShell 命令代码。
 
+## 可能出现错误的原因
+
+该脚本不会修改游戏配置文件的内容，只是复制并替换游戏已保存的配置文件的内容。 如果替换配置文件内容后出现游戏错误，原因可能是游戏发行商修改了配置文件名称或路径或者配置文件中的参数名称和定义方法。 否则只要设置正确，这个脚本不会导致游戏出错。
+
 ## 作者
 
 - ShootersPool：LHsea
@@ -68,6 +72,10 @@ I’ve created a script that allows for quick switching to different pool games 
 ## Reminder
 
 Please assess and assume the risks associated with running this script. It is assumed that players using this script are familiar with and understand PowerShell command code.
+
+## Possible reasons for the error
+
+This script does not modify the contents of the game's configuration file, it simply copies and replaces the contents of the game's saved configuration file. If a game error occurs after replacing the configuration file content, the reason may be that the game publisher has modified the configuration file name or path or the parameter names and definition methods in the configuration file. Otherwise, as long as it is set up correctly, this script will not cause errors in the game.
 
 ## Authors
 
