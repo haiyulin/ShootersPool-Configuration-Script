@@ -4,6 +4,8 @@
 
 此 PowerShell 脚本旨在自动设置 ShootersPool 游戏中的离线比赛。 它允许用户保存他们的游戏配置并在不同的设置之间快速切换。
 
+我做了个脚本，打开SP离线游戏时，可以按照自己的选择快速切换到自己配置的不同的台球比赛，不用再重新设置球桌，桌布，摩擦等参数。原配置文件在同目录里自动备份，不会删除。
+
 ## 设置说明
 
 1. 打开SP离线游戏并配置离线比赛设置（台球桌、球组、竞技场等）。 设置好后开始比赛，然后退出游戏。
@@ -39,6 +41,8 @@
 ## Overview
 
 This PowerShell script is designed to automate the setup of offline matches in the ShootersPool game. It allows users to save their game configurations and quickly switch between different setups.
+
+I’ve created a script that allows for quick switching to different pool games configured by the user when opening the SP offline game, eliminating the need to reset parameters like the pool table, cloth, friction, etc. The original configuration file is automatically backed up in the same directory and is not deleted.
 
 ## Setup Instructions
 
