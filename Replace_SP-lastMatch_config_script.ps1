@@ -106,7 +106,12 @@ function ContentToCopy {
         #     replace_lastMatch -contentToCopy $contentToCopy
         # }
         # ----------------------------------------------------------------------------------    
-        
+        "" { 
+            # 运行SP离线游戏 shootersPool.exe
+            # Run the SP offline game shootersPool.exe
+            Start-Process -FilePath  ShootersPool.exe  -WorkingDirectory $script:shootersPoolExe
+            Write-Host "正在打开离线ShooterPool游戏...（Launching offline ShooterPool game...）"           
+        }        
         "3" {
             # 读取自定义斯诺克比赛配置文件内容
             # Read the content of the custom snooker match configuration file
@@ -124,7 +129,9 @@ function ContentToCopy {
             Write-Host "正在退出...（Exiting...）"
         } 
         default {
-            Write-Host "输入错误，请重新输入。（Invalid input, please re-enter.）"
+            Write-Host "输入错误，请重新输入。（Invalid input, please re-enter.）
+            
+            "
             return $false        
         }
     }
@@ -137,9 +144,14 @@ function ContentToCopy {
 
 # 提示信息 Prompt message
 Write-Host "
-请输入台球比赛类型, 并按回车键。（Please enter the type of billiards match and press Enter.）    
+请输入台球比赛类型, 并按回车键。（Please enter the type of billiards match and press Enter.） 
+
 [3] - 斯诺克比赛（Snooker match）
+
 [8] - 中国8球比赛（Chinese 8-ball match）
+
+[Enter] - 继续上次的比赛设置（Continue with last match settings ）
+
 [q] - 退出游戏（Exit the game） 
     
 " 
